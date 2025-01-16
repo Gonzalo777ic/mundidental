@@ -1,8 +1,15 @@
 :root {
-  --primary: #06A3DA;
+  --primary: #0D3B79;
   --light: #EEF9FF;
   --dark: #091E3E;
   --secondary: #f57e57;
+}
+
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 body {
@@ -32,6 +39,53 @@ img {
   justify-content: space-between;
   width: 100%;
 }
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espacio entre el logo y el texto */
+}
+
+.logo-image {
+  max-width: 100px; /* Ajusta según el tamaño deseado */
+  height: auto;
+}
+
+.logo-icon {
+  font-size: 24px; /* Tamaño del icono */
+  color: #091E3E; /* Color del ícono */
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espacio entre el logo y el texto */
+}
+
+.logo-image {
+  height: 100px; /* Ajusta el tamaño del logo según sea necesario */
+  width: auto;
+}
+
+.logo-text {
+  font-size: 24px; /* Tamaño del texto */
+  font-weight: bold;
+  color: var(--primary); /* Cambia según el esquema de colores del sitio */
+}
+
+.brand-link {
+  text-decoration: none; /* Elimina el subrayado */
+  color: inherit; /* Mantiene el color original del texto */
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espacio entre el logo y el texto */
+}
+
+.brand-link:hover {
+  opacity: 0.9; /* Opcional: efecto de opacidad al pasar el cursor */
+}
+
+
 
 .col {
   align-items: center;
@@ -1230,13 +1284,6 @@ form {
   padding-right: 150px;
 }
 
-.signup-container {
-  background-color: var(--light-color);
-  padding-top: 50px;
-  position: relative;
-  top: 30px;
-  z-index: 1;
-}
 
 .form-image {
   display: block;
@@ -1247,14 +1294,6 @@ form {
   width: 100%;
 }
 
-.signup-form-wrapper {
-  background-color: var(--primary);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin: 0 auto;
-  max-width: 1850px;
-  padding: 40px;
-  text-align: center;
-}
 
 .team-details p {
   color: #06A3DA;
@@ -1262,10 +1301,7 @@ form {
   margin: 0;
 }
 
-.signup-form {
-  max-width: 600px;
-  margin: 0 auto;
-}
+
 
 .form-group {
   align-items: center;
@@ -1285,20 +1321,6 @@ form {
 
 .input-field::placeholder {
   color: var(--dark);
-}
-
-.signup-button {
-  background-color: var(--dark);
-  border: none;
-  color: white;
-  cursor: pointer;
-  font-size: 16px;
-  height: 100%;
-  padding: 16px 25px;
-}
-
-.signup-button:hover {
-  background-color: #333;
 }
 
 .footer-container {
@@ -1349,6 +1371,26 @@ form {
   align-items: center;
   display: flex;
   margin-bottom: 10px;
+}
+
+.business-hours {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+.business-hours li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px; /* Igual al margen de los links */
+  align-items: center;
+}
+
+.business-hours li strong {
+  color: var(--light); /* Usa el color primario para destacar los días */
+  margin-right: 8px; /* Similar al margen de iconos */
 }
 
 .social-icons {
@@ -1494,4 +1536,182 @@ form {
   #check:checked~.navbar-right .nav-links {
     right: 0;
   }
+}
+
+/* WhatsApp Button Styles */
+.whatsapp-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 24px;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+  background-color: #128C7E;
+  transform: scale(1.1);
+}
+
+.whatsapp-btn i {
+  font-size: 45px;
+}
+
+.map-section {
+  text-align: center;
+  color: #091E3E;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.map-section iframe {
+  width: 100%;
+  height: 450px;
+  border: 0;
+}
+
+
+
+/* CONTACTO */
+
+.company-info {
+  text-align: center;
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+  font-size: 16px;
+  color: #333;
+}
+.company-info h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.company-info a {
+  color: #007BFF;
+  text-decoration: none;
+}
+.company-info a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+/* INSTALACIONES */
+
+.gallery-section {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.gallery-heading {
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.gallery-item {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-image {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.gallery-description {
+  padding: 15px;
+  font-size: 16px;
+  color: #555;
+  text-align: left;
+}
+
+
+/* EQUIPO */
+
+
+/* Versión extendida */
+.extended-team-section {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.extended-team-heading {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  color: var(--primary);
+  margin-bottom: 50px;
+}
+
+.extended-team-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.extended-team-card {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.extended-team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.extended-team-image-container {
+  flex-shrink: 0;
+  width: 200px;
+  height: 200px;
+}
+
+.extended-team-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid var(--primary);
+}
+
+.extended-team-details {
+  flex: 1;
 }

@@ -1,59 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dental Website</title>
+    <title>Mundidental</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Images/logo-navegador.jpg" type="image/x-icon">
+
 </head>
+
 <body>
     <div class="header">
         <div class="topbar">
             <div class="col info">
-                <small><i class="fas fa-clock"></i> Opening Hours: Mon - Tues : 6.00 am - 10.00 pm, Sunday
-                    Closed</small>
+                <small><i class="fas fa-clock"></i> C/ Paseo de los Artilleros 23, posterior., Madrid, Spain </small>
             </div>
             <div class="col contact bg-primary">
                 <div class="email">
                     <i class="fa-solid fa-envelope"></i> info@example.com
                 </div>
                 <div class="phone">
-                    <i class="fas fa-phone"></i> +012 345 6789
+                    <i class="fas fa-phone"></i> 917 75 30 70
                 </div>
             </div>
         </div>
     </div>
     <header class="custom-navbar">
         <div class="brand-logo">
-            <h1><i class="fa fa-tooth logo-icon"></i> DentCare</h1>
+            <a href="index.html" class="brand-link">
+                <img src="./Images/mundident-logo.jpg" alt="Mundident Logo" class="logo-image">
+                <span class="logo-text">Mundidental</span>
+            </a>
         </div>
         <input type="checkbox" id="check" />
         <nav class="navbar-right">
             <ul class="nav-links">
-                <li><a href="#" class="nav-item active">Home</a></li>
-                <li><a href="#" class="nav-item">About</a></li>
-                <li><a href="#" class="nav-item">Service</a></li>
-                <li><a href="#" class="nav-item">Pages</a></li>
-                <li><a href="#" class="nav-item">Contact</a></li>
+                <li><a href="#inicio" class="nav-item active">Inicio</a></li>
+                <li><a href="./tratamientos.html" class="nav-item">Tratamientos</a></li>
+                <li><a href="./equipo.html" class="nav-item">Equipo</a></li>
+                <li><a href="./instalaciones.html" class="nav-item">Instalaciones</a></li>
+                <li><a href="./contacto.html" class="nav-item">Contacto</a></li>
                 <label for="check" class="close-menu"><i class="fa fa-times"></i></label>
             </ul>
             <label for="check" class="open-menu"><i class="fa fa-bars"></i></label>
             <div class="actions">
-                <button class="search-btn"><i class="fa fa-search"></i></button>
-                <a href="#" class="btn btn-appointment-nav">Appointment</a>
+                <a href="#" class="btn btn-appointment-nav">Solicitar Cita</a>
             </div>
         </nav>
     </header>
     <div class="carousel-container">
         <div class="carousel-slide active">
-            <img class="carousel-img" src="./Images/new.jpg" style="max-width: 100%;height:auto;" alt="Healthy Teeth">
+            <img class="carousel-img" src="./Images/mundident-sala.jpg" style="max-width: 100%;height:auto;"
+                alt="Healthy Teeth">
             <div class="carousel-caption">
                 <div class="caption-content">
-                    <p class="caption-title">Keep Your Teeth Healthy</p>
-                    <p class="caption-heading">Take The Best Quality Dental Treatment</p>
-                    <a href="#" class="btn btn-primary">Appointment</a>
-                    <a href="#" class="btn btn-secondary">Contact Us</a>
+                    <p class="caption-title">Mantén Tus Dientes Sanos</p>
+                    <p class="caption-heading">Recibe el Mejor Tratamiento Dental de Calidad</p>
+                    <a href="#" class="btn btn-primary">Pedir Cita</a>
+                    <a href="#" class="btn btn-secondary">Contáctanos</a>
                 </div>
             </div>
         </div>
@@ -62,31 +68,23 @@
     </div>
     <section class="info-section">
         <div class="info-box bg-primary">
-            <p class="info-title">Opening Hours</p>
+            <p class="info-title">Horario de Atención</p>
             <ul class="info-list">
-                <li>Mon - Fri: <span>8:00am - 9:00pm</span></li>
-                <li>Saturday: <span>8:00am - 7:00pm</span></li>
-                <li>Sunday: <span>8:00am - 5:00pm</span></li>
+                <li><strong>Lunes a Viernes:</strong> 10:00 - 14:00 <br> 16:00 - 20:00</li>
+                <li><strong>Sábado y Domingo:</strong> Cerrado</li>
             </ul>
-            <a href="#" class="btn-light" id="searchdoc">Appointment</a>
         </div>
+
+
         <div class="info-box bg-dark">
-            <p class="info-title">Search A Doctor</p>
-            <form>
-                <input type="text" placeholder="Appointment Date" class="btn-light">
-                <select class="btn-light">
-                    <option>Select A Service</option>
-                    <option> 1</option>
-                    <option> 2</option>
-                    <option> 3</option>
-                </select>
-                <button class="btn-light" id="searchdoc">Search Doctor</button>
-            </form>
+            <p class="info-title">Pedir Cita</p>
+            <p>Haz clic en el botón para solicitar una cita con uno de nuestros especialistas.</p>
+            <a href="#cita" class="btn-light">Pedir Cita</a>
         </div>
         <div class="info-box bg-secondary">
             <p class="info-title">Make Appointment</p>
             <p>Ipsum erat ipsum dolor clita rebum no rebum dolores labore, ipsum magna at eos et eos amet.</p>
-            <p class="contact-number">+012 345 6789</p>
+            <p class="contact-number">917 75 30 70</p>
         </div>
     </section>
     <div class="about-section">
@@ -123,47 +121,7 @@
             </div>
         </div>
     </div>
-    <div class="appointment-section">
-        <div class="content-wrapper">
-            <div class="text-appointment">
-                <h1>We Are A Certified and Award Winning Dental Clinic You Can Trust</h1>
-                <p>
-                    Eirmod sed tempor lorem ut dolores. Aliquyam sit sadipscing kasd ipsum. Dolor ea et dolore et
-                    at sea ea at dolor, justo ipsum duo rebum sea invidunt voluptua. Eos vero eos vero ea et
-                    dolore eirmod et. Dolores diam duo invidunt lorem. Elitr ut dolores magna sit. Sea dolore
-                    sanctus sed et. Takimata takimata sanctus sed.
-                </p>
-            </div>
-            <div class="appointment-form">
-                <h1>Make Appointment</h1>
-                <form>
-                    <div class="form-row">
-                        <select class="form-input">
-                            <option selected>Select A Service</option>
-                            <option value="1">1</option>
-                            <option value="2"> 2</option>
-                            <option value="3"> 3</option>
-                        </select>
-                        <select class="form-input">
-                            <option selected>Select Doctor</option>
-                            <option value="1">1</option>
-                            <option value="2"> 2</option>
-                            <option value="3"> 3</option>
-                        </select>
-                    </div>
-                    <div class="form-row">
-                        <input type="text" class="form-input" placeholder="Your Name">
-                        <input type="email" class="form-input" placeholder="Your Email">
-                    </div>
-                    <div class="form-row">
-                        <input type="text" class="form-input" placeholder="Appointment Date">
-                        <input type="text" class="form-input" placeholder="Appointment Time">
-                    </div>
-                    <button type="submit" class="submit-button">Make Appointment</button>
-                </form>
-            </div>
-        </div>
-    </div>
+
     <div class="full-container">
         <div class="inner-container">
             <div class="row">
@@ -175,8 +133,8 @@
                 </div>
                 <div class="text-container">
                     <div class="section-header">
-                        <p class="title-highlight">Our Services</p>
-                        <p class="main-title">We Offer The Best Quality Dental Services</p>
+                        <p class="title-highlight">Nuestros Servicios</p>
+                        <p class="main-title">Ofrecemos servicios de</p>
                     </div>
                     <div class="services">
                         <div class="service-item">
@@ -217,104 +175,33 @@
                         </div>
                     </div>
                 </div>
-                <div class="appointment-container">
-                    <div class="appointment-box">
-                        <p class="make-appointment">Make Appointment</p>
-                        <p>Clita ipsum magna kasd rebum at ipsum amet dolor justo dolor est magna stet eirmod</p>
-                        <p>+012 345 6789</p>
-                    </div>
-                </div>
+
             </div>
         </div>
     </div>
     <div class="offer-section">
         <div class="offer-content">
-            <h1>Save 30% On Your First Dental Checkup</h1>
+            <h1>Instalaciones</h1>
             <p>
                 Eirmod sed tempor lorem ut dolores sit kasd ipsum. Dolor ea et dolore et
                 at sea ea at dolor justo ipsum duo rebum sea. Eos vero eos vero ea et
                 dolore eirmod diam duo lorem magna sit dolore sed et.
             </p>
             <div class="offer-buttons">
-                <a href="#" class="btn-appointment">Appointment</a>
+                <a href="#" class="btn-appointment">Ver Galería</a>
                 <a href="#" class="btn-read-more">Read More</a>
             </div>
         </div>
     </div>
-    <div class="pricing-section">
-        <div class="pricing-container">
-            <div class="pricing-text">
-                <p class="pricing-subtitle">Pricing Plan</p>
-                <p class="pricing-title">We Offer Fair Prices for Dental Treatment</p>
-                <p class="pricing-description">
-                    Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos
-                    labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo
-                    eirmod magna dolore erat amet.
-                </p>
-                <p class="call-text">Call for Appointment</p>
-                <p class="call-number">+012 345 6789</p>
-            </div>
-            <div class="pricing-cards">
-                <div class="pricing-card">
-                    <div class="card-image">
-                        <img src="./Images/price-2.jpg" alt="Teeth Whitening">
-                        <div class="price-tag">$35</div>
-                    </div>
-                    <div class="card-details">
-                        <p>Dental Implant</p>
-                        <hr>
-                        <ul>
-                            <li>Modern Equipment <i class="fa-solid fa-check"></i></li>
-                            <li>Professional Dentist <i class="fa-solid fa-check"></i></li>
-                            <li>24/7 Call Support <i class="fa-solid fa-check"></i></li>
-                        </ul>
-                        <a href="#" class="appointment-btn">Appointment</a>
-                    </div>
-                </div>
-                <div class="pricing-card">
-                    <div class="card-image">
-                        <img src="./Images/price-3.jpg" alt="Dental Implant">
-                        <div class="price-tag">$49</div>
-                    </div>
-                    <div class="card-details">
-                        <p>Root Canal</p>
-                        <hr>
-                        <ul>
-                            <li>Modern Equipment <i class="fa-solid fa-check"></i></li>
-                            <li>Professional Dentist <i class="fa-solid fa-check"></i></li>
-                            <li>24/7 Call Support <i class="fa-solid fa-check"></i></li>
-                        </ul>
-                    </div>
-                    <a href="#" class="appointment-btn">Appointment</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="testimonial-section">
-        <div class="testimonial-container">
-            <button class="carousel-arrow left"> <i class="fa-solid fa-arrow-left"></i>
-            </button>
-            <div class="testimonial-carousel">
-                <div class="testimonial-card">
-                    <img class="testimonial-img" src="./Images/testimonial-2.jpg" alt="Client Image">
-                    <p class="testimonial-text">
-                        Dolores sed duo clita justo dolor et stet lorem kasd dolore lorem ipsum. At lorem lorem magna ut
-                        et, nonumy labore diam erat. Erat dolor rebum sit ipsum.
-                    </p>
-                    <hr class="testimonial-divider">
-                    <p class="testimonial-name">Client Name</p>
-                </div>
-            </div>
-            <button class="carousel-arrow right"> <i class="fa-solid fa-arrow-right"></i></button>
-        </div>
-    </div>
+
+
     <div class="dentist-section">
         <div class="dentist-container">
             <div class="team-container">
                 <div class="team-member">
-                    <h1 class="section-subtitle">Our Dentist</h5>
-                        <h1 class="section-title">Meet Our Certified & Experienced Dentist</h1>
-                        <div class="appoint-button"><a href="#" class="btn">Appointment</a>
+                    <h1 class="section-subtitle">Nuestros Equipo</h5>
+                        <h1 class="section-title">Acerca de nuestro personal</h1>
+                        <div class="appoint-button"><a href="#" class="btn">Leer más</a>
                         </div>
                 </div>
                 <div class="team-member">
@@ -343,8 +230,8 @@
                         </div>
                     </div>
                     <div class="team-details">
-                        <h4>Dr. John Doe</h4>
-                        <p>Implant Surgeon</p>
+                        <h4>Dr. Edward Isique</h4>
+                        <p>Higienista</p>
                     </div>
                 </div>
                 <div class="team-member">
@@ -395,16 +282,20 @@
             </div>
         </div>
     </div>
-    <div class="signup-container">
-        <div class="signup-form-wrapper">
-            <form class="signup-form">
-                <div class="form-group">
-                    <input type="text" class="input-field" placeholder="Your Email">
-                    <button class="signup-button">Sign Up</button>
-                </div>
-            </form>
-        </div>
-    </div>
+
+    <div class="map-section">
+        <h3>Visítanos en Google Maps</h3>
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.096231884262!2d-3.6088195999999995!3d40.4067189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4225659e6ca603%3A0x66b910999e854d65!2sCl%C3%ADnica%20Odontol%C3%B3gica%20Mundidental!5e0!3m2!1sen!2ses!4v1737047922545!5m2!1sen!2ses"
+          width="100%" 
+          height="450" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
     <div class="footer-container">
         <div class="footer-top">
             <div class="footer-column">
@@ -414,19 +305,10 @@
                     <a class="footer-link" href="#"><span class="footer-icon">→</span>About Us</a>
                     <a class="footer-link" href="#"><span class="footer-icon">→</span>Our Services</a>
                     <a class="footer-link" href="#"><span class="footer-icon">→</span>Latest Blog</a>
-                    <a class="footer-link" href="#"><span class="footer-icon">→</span>Contact Us</a>
+                    <a class="footer-link" href="./contacto.html"><span class="footer-icon">→</span>Contacto</a>
                 </div>
             </div>
-            <div class="footer-column">
-                <h3 class="footer-heading">Popular Links</h3>
-                <div class="footer-links">
-                    <a class="footer-link" href="#"><span class="footer-icon">→</span>Home</a>
-                    <a class="footer-link" href="#"><span class="footer-icon">→</span>About Us</a>
-                    <a class="footer-link" href="#"><span class="footer-icon">→</span>Our Services</a>
-                    <a class="footer-link" href="#"><span class="footer-icon">→</span>Latest Blog</a>
-                    <a class="footer-link" href="#"><span class="footer-icon">→</span>Contact Us</a>
-                </div>
-            </div>
+
             <div class="footer-column">
                 <h3 class="footer-heading">Get In Touch</h3>
                 <p class="footer-contact"><span class="footer-icon"><i class="fa fa-map-marker"
@@ -434,22 +316,26 @@
                 <p class="footer-contact"><span class="footer-icon"><i class="fas fa-envelope-open"></i></span>
                     info@example.com</p>
                 <p class="footer-contact"><span class="footer-icon"><i class="fa fa-phone"
-                            aria-hidden="true"></i></span> +012 345 67890</p>
+                            aria-hidden="true"></i></span> 917 75 30 70</p>
             </div>
             <div class="footer-column">
-                <h3 class="footer-heading">Follow Us</h3>
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>
+                <h3 class="footer-heading">Horario de Atención</h3>
+                <ul class="business-hours">
+                    <li><strong>Lunes a Viernes:</strong> 10:00-14:00 <br> 16:00-20:00</li>
+                    <li><strong>Sábado y Domingo:</strong> Cerrado</li>
+                </ul>
+
             </div>
         </div>
         <div class="footer-bottom">
-            <p class="footer-copy">&copy;<u> Your Site Name.</u> All Rights Reserved.</p>
-            <p class="footer-design">Designed by Free Website Code by <u>HTML Codex</u></p>
+            <p class="footer-copy">&copy;<u> Mundidental.</u> Todos los derechos reservados.</p>
         </div>
     </div>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/34699123456" target="_blank" class="whatsapp-btn">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 </body>
+
 </html>
