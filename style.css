@@ -847,6 +847,13 @@ form {
   font-weight: bold;
 }
 
+.tratamiento-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px; /* Ajusta el valor según el espacio necesario */
+}
+
 
 .appointment-container {
   align-items: center;
