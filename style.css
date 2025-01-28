@@ -1249,10 +1249,25 @@ form {
   max-width: calc(33.333% - 20px);
   overflow: hidden;
   text-align: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.team-image {
+  overflow: hidden;
+  width: 100%;
+  max-width: 200px; /* Ajusta según el tamaño deseado */
+  height: 250px;
+  margin: 0 auto; /* Centra la imagen */
+  position: relative;
+
 }
 
-.team-image {
-  position: relative;
+
+.team-image img {
+  width: 100%; /* Asegura que las imágenes ocupen todo el ancho disponible del contenedor */
+  height: 250px; /* Ajusta la altura para que todas las imágenes tengan el mismo tamaño */
+  object-fit: cover; /* Mantiene las proporciones de la imagen sin distorsionarla */
+  border-radius: 50%; /* Si deseas hacer las imágenes circulares */
 }
 
 .social-links {
