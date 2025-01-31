@@ -586,6 +586,7 @@ h1 {
 .text-content {
   flex: 7;
   margin-right: 20px;
+  padding-left: 40px; /* Añade espacio desde el lado izquierdo */
 }
 
 .title-section {
