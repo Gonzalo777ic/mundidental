@@ -1251,14 +1251,16 @@ form {
   text-align: center;
   text-align: center;
   margin-bottom: 20px;
+
 }
 .team-image {
   overflow: hidden;
   width: 100%;
-  max-width: 200px; /* Ajusta según el tamaño deseado */
-  height: 250px;
+  max-width: 300px; /* Ajusta según el tamaño deseado */
+  height: 350px;
   margin: 0 auto; /* Centra la imagen */
   position: relative;
+  margin: 40px auto 0; /* Agrega margen superior para bajar la imagen */
 
 }
 
@@ -1283,7 +1285,7 @@ form {
 }
 
 .team-image img {
-  height: auto;
+  height: 100%;
   width: 100%;
 }
 
