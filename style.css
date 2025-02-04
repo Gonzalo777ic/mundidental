@@ -445,6 +445,10 @@ h1 {
     font-size: 12px;
   }
 
+  .caption-content{
+    margin-top: 25px;
+  }
+
   .caption-heading {
     font-size: 32px;
   }
