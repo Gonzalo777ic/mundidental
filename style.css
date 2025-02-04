@@ -715,7 +715,7 @@ h1 {
   font-size: 52px;
   font-weight: bold;
   margin-bottom: 20px;
-  text-align: left;
+  text-align: justify;  /* Justifica el texto */
 }
 
 .description {
@@ -727,6 +727,8 @@ h1 {
 .details {
   color: #333;
   margin-bottom: 20px;
+  text-align: justify;  /* Justifica el texto */
+
 }
 
 .features {
