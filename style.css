@@ -715,7 +715,7 @@ h1 {
   font-size: 52px;
   font-weight: bold;
   margin-bottom: 20px;
-  text-align: justify;  /* Justifica el texto */
+  text-align: ali;
 }
 
 .description {
