@@ -158,7 +158,7 @@ img {
   display: flex;
   justify-content: space-between;
   padding: 10px 30px;
-  position: sticky;
+  position: relative;
   top: 0;
   z-index: 1000;
 }
@@ -219,6 +219,7 @@ img {
 }
 
 @media (max-width: 700px) {
+  
   .nav-links {
     align-items: center;
     background-color: var(--light);
@@ -327,6 +328,7 @@ img {
   overflow: hidden;
   position: relative;
   width: 100vw;
+  z-index: 1;
 }
 
 .carousel-img {
@@ -396,6 +398,105 @@ h1 {
   margin-bottom: -60px;
   text-transform: uppercase;
 }
+
+@media (max-width: 480px) {
+  /* Ajustes generales */
+  body {
+    font-size: 14px;
+  }
+
+  /* Header */
+  .header {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .topbar {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px;
+  }
+
+  .brand-logo {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .logo-image {
+    max-width: 80px;
+  }
+
+  .navbar-right {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* Carrusel */
+  .carousel-container {
+    height: auto;
+  }
+
+  .carousel-img {
+    height: auto;
+  }
+
+  .carousel-caption {
+    padding: 5px;
+    font-size: 12px;
+  }
+
+  .caption-heading {
+    font-size: 32px;
+  }
+
+  .caption-title {
+    font-size: 18px;
+  }
+
+  /* Botones */
+  .btn {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  .btn-appointment {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+
+  /* Menú navegación */
+  .nav-links {
+    width: 100%;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .nav-item {
+    font-size: 14px;
+  }
+
+  /* Inputs y botones de búsqueda */
+  .search-btn {
+    font-size: 16px;
+  }
+
+  /* Contacto */
+  .contact div {
+    padding: 5px 10px;
+  }
+
+  /* Solución para menú hamburguesa */
+  .open-menu,
+  .close-menu {
+    font-size: 2rem;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+}
+
 
 .btn-primary {
   background: var(--primary);
@@ -699,6 +800,75 @@ h1 {
   font-size: 1rem;
   line-height: 1.6;
 }
+
+/* Ajustes generales para móviles */
+@media (max-width: 576px) {
+  /* Botones */
+  .btn-primary,
+  .btn-secondary {
+    font-size: 14px;
+    padding: 10px 14px;
+  }
+
+  /* Controles del carrusel */
+  .carousel-control {
+    font-size: 18px;
+    height: 30px;
+    width: 30px;
+  }
+
+  /* Información */
+  .info-section {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .info-box {
+    padding: 40px;
+    font-size: 14px;
+  }
+
+  /* Títulos */
+  .title-About {
+    font-size: 36px;
+  }
+
+  .section-subtitle {
+    font-size: 14px;
+  }
+
+  /* Sección de cita */
+  .content-wrapper {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .text-appointment h1 {
+    font-size: 1.75rem;
+  }
+
+  .text-appointment p {
+    font-size: 0.9rem;
+  }
+
+  /* Contenedores de filas */
+  .row {
+    flex-direction: column;
+  }
+
+  /* Imagen de sección "about" */
+  .about-image {
+    max-height: 300px;
+  }
+
+  /* Ajustes adicionales de márgenes */
+  .text-content {
+    padding-left: 0;
+    margin-right: 0;
+  }
+}
+
+
 
 .appointment-form {
   align-items: center;
@@ -1026,6 +1196,97 @@ form {
   display: block;
   width: 100%;
 }
+
+
+@media screen and (max-width: 768px) {
+  /* General */
+  .appointment-form {
+    padding: 20px;
+    height: auto;
+  }
+
+  .appointment-form h1 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+
+  form {
+    gap: 10px;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .offer-content {
+    padding: 40px;
+  }
+
+  .offer-content h1 {
+    font-size: 2rem;
+  }
+
+  .pricing-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .pricing-card {
+    max-width: 100%;
+  }
+
+  .image-container {
+    height: 250px;
+  }
+
+  .services {
+    flex-direction: column;
+  }
+
+  .service-item {
+    min-width: 100%;
+  }
+
+  .appointment-box {
+    padding: 30px;
+  }
+
+  .appointment-box .make-appointment {
+    font-size: 1.5rem;
+  }
+
+  .btn-appointment,
+  .btn-read-more {
+    padding: 15px;
+    font-size: 0.9rem;
+  }
+
+  /* Sección de oferta */
+  .offer-section {
+    height: auto;
+    padding: 40px 15px;
+  }
+
+  /* Botones de oferta */
+  .offer-buttons {
+    flex-direction: column;
+  }
+
+  /* Servicios */
+  .services {
+    gap: 15px;
+  }
+
+  .service-item {
+    max-width: 100%;
+  }
+}
+
 
 .price-tag {
   background-color: #eef9ff;
@@ -1428,6 +1689,115 @@ form {
   gap: 20px;
   padding: 30px 10%;
 }
+
+/* Estilos responsivos para celulares */
+@media (max-width: 768px) {
+  .price-tag {
+    font-size: 1.4rem;
+    padding: 4px 20px;
+  }
+
+  .card-details {
+    padding: 15px;
+  }
+
+  .card-details h4 {
+    font-size: 1.2rem;
+  }
+
+  .testimonial-section {
+    height: auto;
+    padding: 100px 10px;
+  }
+
+  .testimonial-container {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .testimonial-card {
+    max-width: 100%;
+  }
+
+  .testimonial-img {
+    height: 80px;
+    width: 80px;
+  }
+
+  .appointment-btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .dentist-section {
+    padding: 30px 10px;
+  }
+
+  .team-container {
+    flex-direction: column;
+  }
+
+  .team-member {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .team-image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .social-links {
+    position: static;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .appoint-button {
+    padding-right: 0;
+  }
+
+  .footer-top {
+    padding: 20px 5%;
+    flex-direction: column;
+  }
+
+  .carousel-arrow {
+    height: 25px;
+    font-size: 0.9rem;
+    width: 25px;
+  }
+
+  .testimonial-text {
+    font-size: 1rem;
+  }
+
+  .testimonial-name {
+    font-size: 1.1rem;
+  }
+
+  .form-image {
+    max-width: 100%;
+  }
+
+  .input-field {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .team-details {
+    padding: 10px;
+  }
+
+  .team-details h4 {
+    font-size: 18px;
+  }
+
+  .footer-container {
+    padding: 15px;
+  }
+}
+
 
 .footer-column {
   flex: 1 1 calc(25% - 20px);
@@ -1866,4 +2236,54 @@ form {
 
 .btn-read-more:hover {
   background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .footer-column {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .extended-team-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .extended-team-image-container {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    font-size: 18px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .gallery-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Solo una imagen por fila */
+    gap: 16px;  }
+
+  .treatment-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .treatment-image {
+    height: 150px;
+  }
+
+  .extended-team-heading {
+    font-size: 24px;
+  }
+
+  .btn-read-more {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
 }
