@@ -423,7 +423,8 @@ h1 {
   }
 
   .logo-image {
-    max-width: 80px;
+    max-width: 100%;  /* Asegura que el logo no sobrepase el contenedor */
+    height: 70px;     /* Mantiene la proporción del logo */
   }
 
   .navbar-right {
